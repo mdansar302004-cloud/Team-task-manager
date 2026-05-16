@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['*.up.railway.app'],
+    allowedHosts: 'all',
     proxy: {
       '/api': {
         target: 'http://localhost:8000',
@@ -13,6 +13,6 @@ export default defineConfig({
     }
   },
   preview: {
-    allowedHosts: ['*.up.railway.app'],
+    allowedHosts: 'all',
   }
 })
