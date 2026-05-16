@@ -10,5 +10,8 @@ export default defineConfig({
         changeOrigin: true,
       }
     }
+  },
+  preview: {
+    allowedHosts: ['*.up.railway.app'],
   }
 })
