@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: ['all'],
+    allowedHosts: ['team-task-manager-production-9e17.up.railway.app'],
     host: '0.0.0.0',
     port: process.env.PORT || 4173,
   },
